@@ -33,7 +33,7 @@ body{
     z-index: 10000;
 }
 
-.header > a > p{
+.header > p{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -169,5 +169,5 @@ body{
 }
 
 #sns{
-    margin: 40px;
+    margin: 50px;
 }
