@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*fade-in*/
+@keyframes fadein { from {opacity: 0;} to {opacity: 1;} }
+@-moz-keyframes fadein { from {opacity: 0;} to {opacity: 1;} } /*firefox*/
+@-webkit-keyframes fadein { from {opacity: 0;} to {opacity: 1;} } /*chrome or safari*/
+@-o-keyframes fadein { from {opacity: 0;} to {opacity: 1;} } /*opera*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    background-color: #f5efeb;
+    font-family: 'BMJUA';
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+}
+
+@media all and (min-height: 669px) {
+    .title-wrap{
+        width: 100%;
+        height: 50px;
+        background-color: #ea7a7a;
+        position: relative;
+        z-index: 10000;
+    }
+    
+    .title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        font-size: 1.8rem;
+        color: white;
+    }
+    
+    #m1 > .title-wrap{
+        /*fade-in*/
+        opacity: 0;
+        animation: fadein 0.5s ease-in-out forwards;
+        -moz-animation: fadein 0.5s ease-in-out forwards;
+        -webkit-animation: fadein 0.5s ease-in-out forwards;
+        -o-animation: fadein 0.5s ease-in-out forwards;
+        animation-delay: 0.2s;
+    }
+    
+    .progress{
+        position: relative;
+        margin-top: 40px;
+        text-align: center;
+    }
+    
+    .progress > p{
+        font-size: 1.6rem;
+        margin: 10px auto;
+        width: 300px;
+        text-align: right;
+    }
+    
+    progress{
+        width: 300px;
+        height: 20px;
+        background: #ea7a7a;
+    }
+    
+    progress::-webkit-progress-value {
+        background: #ea7a7a;
+        
+    }
+    
+    progress::-moz-progress-bar {
+        background: #ea7a7a;
+    }
+    
+    #m1 > .progress{
+        /*fade-in*/
+        opacity: 0;
+        animation: fadein 0.5s ease-in-out forwards;
+        -moz-animation: fadein 0.5s ease-in-out forwards;
+        -webkit-animation: fadein 0.5s ease-in-out forwards;
+        -o-animation: fadein 0.5s ease-in-out forwards;
+        animation-delay: 0.2s;
+    }
+    
+    .question-wrap{
+        position: relative;
+        width: 300px;
+        margin: 40px auto;
+        font-size: 2.3rem;
+        border: 3px solid #ceb9ff;
+        text-align: center;
+        padding: 15px 0;
+    
+        /*fade-in*/
+        opacity: 0;
+        animation: fadein 0.5s ease-in-out forwards;
+        -moz-animation: fadein 0.5s ease-in-out forwards;
+        -webkit-animation: fadein 0.5s ease-in-out forwards;
+        -o-animation: fadein 0.5s ease-in-out forwards;
+        animation-delay: 0.2s;
+    }
+    
+    .img-wrap{
+        position: relative;
+        text-align: center;
+        margin-top: 50px;
+    
+        /*fade-in*/
+        opacity: 0;
+        animation: fadein 0.5s ease-in-out forwards;
+        -moz-animation: fadein 0.5s ease-in-out forwards;
+        -webkit-animation: fadein 0.5s ease-in-out forwards;
+        -o-animation: fadein 0.5s ease-in-out forwards;
+        animation-delay: 0.2s;
+    }
+    
+    .answer-wrap{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        margin-top: 50px;
+    
+        /*fade-in*/
+        opacity: 0;
+        animation: fadein 0.5s ease-in-out forwards;
+        -moz-animation: fadein 0.5s ease-in-out forwards;
+        -webkit-animation: fadein 0.5s ease-in-out forwards;
+        -o-animation: fadein 0.5s ease-in-out forwards;
+        animation-delay: 0.7s;
+    }
+    
+    input[type=radio] {
+        display: none;
+    }
+    
+    input[type=radio] + label{
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px 0;
+        color: black;
+        border: 3px solid #7381b0;
+        width:300px;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    
+    input[type=radio] + label:hover{
+        background-color:#ed97a6;
+        color: white;
+        border-color: #ed97a6;
+        cursor: pointer;
+    }
+    
+    input[type=radio]:checked ~ label{    
+        background-color:#ed97a6;
+        color: white;
+        border-color: #ed97a6;
+    }
+}
+
+@media all and (max-height: 668px) {
+    .title-wrap{
+        width: 100%;
+        height: 50px;
+        background-color: #ea7a7a;
+        position: relative;
+        z-index: 10000;
+    }
+    
+    .title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+        font-size: 1.8rem;
+        color: white;
+    }
+    
+    #m1 > .title-wrap{
+        /*fade-in*/
+        opacity: 0;
+        animation: fadein 0.5s ease-in-out forwards;
+        -moz-animation: fadein 0.5s ease-in-out forwards;
+        -webkit-animation: fadein 0.5s ease-in-out forwards;
+        -o-animation: fadein 0.5s ease-in-out forwards;
+        animation-delay: 0.2s;
+    }
+    
+    .progress{
+        position: relative;
+        margin-top: 20px;
+        text-align: center;
+    }
+    
+    .progress > p{
+        font-size: 1.6rem;
+        margin: 5px auto;
+        width: 300px;
+        text-align: right;
+    }
+    
+    progress{
+        width: 300px;
+        height: 10px;
+        background: #ea7a7a;
+    }
+    
+    progress::-webkit-progress-value {
+        background: #ea7a7a;
+        
+    }
+    
+    progress::-moz-progress-bar {
+        background: #ea7a7a;
+    }
+    
+    #m1 > .progress{
+        /*fade-in*/
+        opacity: 0;
+        animation: fadein 0.5s ease-in-out forwards;
+        -moz-animation: fadein 0.5s ease-in-out forwards;
+        -webkit-animation: fadein 0.5s ease-in-out forwards;
+        -o-animation: fadein 0.5s ease-in-out forwards;
+        animation-delay: 0.2s;
+    }
+    
+    .question-wrap{
+        position: relative;
+        width: 300px;
+        margin: 20px auto;
+        font-size: 2.3rem;
+        border: 3px solid #ceb9ff;
+        text-align: center;
+        padding: 15px 0;
+    
+        /*fade-in*/
+        opacity: 0;
+        animation: fadein 0.5s ease-in-out forwards;
+        -moz-animation: fadein 0.5s ease-in-out forwards;
+        -webkit-animation: fadein 0.5s ease-in-out forwards;
+        -o-animation: fadein 0.5s ease-in-out forwards;
+        animation-delay: 0.2s;
+    }
+    
+    .img-wrap{
+        position: relative;
+        text-align: center;
+        margin-top: 30px;
+    
+        /*fade-in*/
+        opacity: 0;
+        animation: fadein 0.5s ease-in-out forwards;
+        -moz-animation: fadein 0.5s ease-in-out forwards;
+        -webkit-animation: fadein 0.5s ease-in-out forwards;
+        -o-animation: fadein 0.5s ease-in-out forwards;
+        animation-delay: 0.2s;
+    }
+    
+    .answer-wrap{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        margin-top: 30px;
+    
+        /*fade-in*/
+        opacity: 0;
+        animation: fadein 0.5s ease-in-out forwards;
+        -moz-animation: fadein 0.5s ease-in-out forwards;
+        -webkit-animation: fadein 0.5s ease-in-out forwards;
+        -o-animation: fadein 0.5s ease-in-out forwards;
+        animation-delay: 0.7s;
+    }
+    
+    input[type=radio] {
+        display: none;
+    }
+    
+    input[type=radio] + label{
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px 0;
+        color: black;
+        border: 3px solid #7381b0;
+        width:300px;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    
+    input[type=radio] + label:hover{
+        background-color:#ed97a6;
+        color: white;
+        border-color: #ed97a6;
+        cursor: pointer;
+    }
+    
+    input[type=radio]:checked ~ label{    
+        background-color:#ed97a6;
+        color: white;
+        border-color: #ed97a6;
+    }
+}

@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'BMJUA';
+}
+
+body{
+    background-color: #f5efeb;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #ea7a7a;
+    position: relative;
+    z-index: 10000;
+}
+
+.header > a > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.8rem;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.main > .box{
+    width: 270px;
+    height: 370px;
+    position: relative;
+    margin: 50px auto 0 auto;
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #e6e3ff;
+}
+
+.main > .box > .result{
+    position: relative;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.main > .box > .result > h1{
+    font-size: 3rem;
+}
+
+.main > .box > img{
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main > .hashtag{
+    position: relative;
+    margin-top: 20px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 1.6rem;
+}
+
+.movie{
+    position: absolute;
+    margin-top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    text-align: center;
+}
+
+.movie > .goodMovie{
+    transform: rotate(2deg);
+    width: 300px;
+    border: 3px solid #ed97a6;
+}
+
+.movie > .goodMovie > p{
+    font-size: 2.3rem;
+    text-align: right;
+    padding: 10px 20px 0 0;
+}
+
+.movie > .goodMovie > ul{
+    list-style: none;
+    padding: 0 0 30px 35px;
+}
+
+.movie > .goodMovie > ul > li{
+    font-size: 2rem;
+    line-height: 30px;
+    text-align: left;
+}
+
+.movie > .badMovie{
+    margin-top: 50px;
+    transform: rotate(-2deg);
+    width: 300px;
+    border: 3px solid #7381b0;
+}
+
+.movie > .badMovie > p{
+    font-size: 2.3rem;
+    text-align: left;
+    padding: 10px 0 0 20px;
+}
+
+.movie > .badMovie > ul{
+    list-style: none;
+    padding: 0 35px 30px 0;
+}
+
+.movie > .badMovie > ul > li{
+    font-size: 2rem;
+    line-height: 30px;
+    text-align: right;
+}
+
+.btn{
+    position: relative;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.btn > a {
+    text-decoration: none;
+    
+}
+
+.btn > a > input {
+    display: none;
+}
+
+.btn > a > input + label {
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-family: 'BMJUA';
+    color: white;
+    background-color: #ea7a7a;
+    padding: 10px 50px;
+    border-radius: 100px;
+}
+
+#sns{
+    margin: 40px;
+}

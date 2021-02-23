@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*fade-in*/
+@keyframes fadein { from {opacity: 0;} to {opacity: 1;} }
+@-moz-keyframes fadein { from {opacity: 0;} to {opacity: 1;} } /*firefox*/
+@-webkit-keyframes fadein { from {opacity: 0;} to {opacity: 1;} } /*chrome or safari*/
+@-o-keyframes fadein { from {opacity: 0;} to {opacity: 1;} } /*opera*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-size: 62.5%;
+    background-color: #f5efeb;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    opacity: 0;
+    animation: fadein 0.5s ease-in-out forwards;
+    -moz-animation: fadein 0.5s ease-in-out forwards;
+    -webkit-animation: fadein 0.5s ease-in-out forwards;
+    -o-animation: fadein 0.5s ease-in-out forwards;
+    animation-delay: 0.2s;
+}
+
+.text{
+    position: relative;
+    white-space: nowrap;
+    text-align: center;
+    padding-top: 110px;
+    font-family: 'BMJUA';
+}
+
+.text > p{
+    font-size: 2.5rem;
+    line-height: 2.2rem;
+    margin-bottom: 0.8rem;
+    color: rgba(234, 122, 122, 0.6);
+}
+
+.text > h1{
+    font-size: 3.3rem;
+    font-weight: 500;
+}
+
+.text > h1 > span{
+    padding: 0 2px;
+    background: linear-gradient(to top, rgba(234, 122, 122, 0.6) 50%, transparent 50%);
+}
+
+.picture{
+    position: relative;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.picture > img{
+    width: 150px;
+}
+
+.notion{
+    position: relative;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'BMJUA';
+}
+
+.notion > .notion1{
+    margin-bottom: 20px;
+}
+
+.btn{
+    position: relative;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.btn > a {
+    text-decoration: none;
+    
+}
+
+.btn > a > input {
+    display: none;
+}
+
+.btn > a > input + label {
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-family: 'BMJUA';
+    color: white;
+    background-color: #ea7a7a;
+    padding: 10px 50px;
+    border-radius: 100px;
+}
+
+#sns{
+    position: relative;
+    margin-top: 50px;
+    text-align: center;
+    white-space: nowrap;
+}
