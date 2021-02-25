@@ -21,10 +21,7 @@
 html{
     font-size: 62.5%;
     font-family: 'BMJUA';
-}
-
-body{
-    background-color: #f5efeb;
+    overflow-x: hidden
 }
 
 #result{
@@ -66,7 +63,13 @@ body{
     position: relative;
 }
 
-.main > .box{
+.box{
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.result_box{
     width: 270px;
     height: 370px;
     position: relative;
@@ -79,18 +82,18 @@ body{
     z-index: 50;
 }
 
-.main > .box > .result{
+.result_box > .result{
     position: relative;
     text-align: center;
     font-size: 2rem;
 }
 
-.main > .box > .result > h1{
+.result_box > .result > h1{
     font-size: 3rem;
     font-weight: 100;
 }
 
-.main > .box > img{
+.result_box > img{
     position: relative;
     margin-top: 25px;
     left: 50%;
@@ -98,34 +101,35 @@ body{
     height: 216px;
 }
 
+.img-wrap{
+    position: relative;
+}
+
+.img-wrap > .camera{
+    width: 45px;
+    position: absolute;
+    top: 120px;
+    right: 0px;
+}
+
+.img-wrap > .tri{
+    width: 268px;
+    position: absolute;
+    top: -130px;
+    right: 36px;
+    transform: rotate(4deg);
+}
+
 .main > .hashtag{
     position: relative;
     margin-top: 20px;
+    margin-bottom: 120px;
     text-align: center;
     white-space: nowrap;
     font-family: 'NanumBarunpen';
     font-size: 1.6rem;
     font-weight: bold;
     z-index: 50;
-}
-
-.img-wrap{
-    position: relative;
-    text-align: right;
-    margin: 30px 17.5px 10px 0;
-}
-
-.img-wrap > .camera{
-    width: 50px;
-    margin-top: 5px;
-}
-
-.img-wrap > .tri{
-    position: absolute;
-    width: 266px;
-    right: 37.5px;
-    top: -240px;
-    transform: rotate(5.5deg);
 }
 
 .description{

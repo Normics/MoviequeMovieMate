@@ -37,6 +37,7 @@ html{
     width: 100%;
     height: 100vh;
     background-image: url( "../image/stain-background.jpg" );
+    background-attachment: scroll;
     z-index: -1;
     opacity: 0.7;
     top:0;
@@ -358,6 +359,7 @@ html{
     .question-wrap{
         position: relative;
         width: 300px;
+        height: 102px;
         margin: 20px auto;
         font-size: 2.3rem;
         border: 3px solid #ceb9ff;
@@ -372,6 +374,24 @@ html{
         -o-animation: fadein 0.5s ease-in-out forwards;
         animation-delay: 0.2s;
     }
+
+    .question-wrap > img{
+        position: absolute;
+        width: 230px;
+        top: -10px;
+        right: -15px;
+        transform: rotate(0.8deg);
+        z-index: 0;
+    }
+
+    .question-wrap > img + span{
+        position: absolute;
+        white-space: nowrap;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
     
     .img-wrap{
         position: relative;
@@ -385,6 +405,10 @@ html{
         -webkit-animation: fadein 0.5s ease-in-out forwards;
         -o-animation: fadein 0.5s ease-in-out forwards;
         animation-delay: 0.2s;
+    }
+
+    .img-wrap > img{
+        height: 216px;
     }
     
     .answer-wrap{
@@ -403,31 +427,101 @@ html{
         animation-delay: 0.7s;
     }
     
-    input[type=radio] {
+    .answer-wrap > .input-wrap-01 > div{
+        border: 3px solid #7381b0;
+        width:300px;
+        height: 43px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+    .answer-wrap > .input-wrap-01 > div > input{
         display: none;
     }
-    
-    input[type=radio] + label{
+
+    .answer-wrap > .input-wrap-01 > div > input + label{
         display: block;
+        width:303px;
+        height: 45px;
+        text-align: center;
         margin-bottom: 10px;
         padding: 10px 0;
         color: black;
-        border: 3px solid #7381b0;
-        width:300px;
-        text-align: center;
         font-size: 1.6rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 11;
     }
-    
-    input[type=radio] + label:hover{
+
+    .answer-wrap > .input-wrap-01 > div > input + label:hover{
         background-color:#ed97a6;
         color: white;
         border-color: #ed97a6;
         cursor: pointer;
     }
     
-    input[type=radio]:checked ~ label{    
+    .answer-wrap > .input-wrap-01 > div > input:checked ~ label{
         background-color:#ed97a6;
         color: white;
         border-color: #ed97a6;
+    }
+
+    .answer-wrap > .input-wrap-02 > div > img{
+        position: absolute;
+        width: 120px;
+        top: -7px;
+        left: -8px;
+        transform: rotate(-0.8deg);
+        z-index: 10;
+    }
+
+    .answer-wrap > .input-wrap-02 > div{
+        border: 3px solid #7381b0;
+        width:300px;
+        height: 43px;
+        position: relative;
+    }
+
+    .answer-wrap > .input-wrap-02 > div > input{
+        display: none;
+    }
+
+    .answer-wrap > .input-wrap-02 > div > input + label{
+        display: block;
+        width:303px;
+        height: 45px;
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 10px 0;
+        color: black;
+        font-size: 1.6rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 11;
+    }
+
+    .answer-wrap > .input-wrap-02 > div > input + label:hover{
+        background-color:#ed97a6;
+        color: white;
+        border-color: #ed97a6;
+        cursor: pointer;
+    }
+
+    .answer-wrap > .input-wrap-02 > div > input + label:hover ~ img{
+        visibility : hidden;
+    }
+    
+    .answer-wrap > .input-wrap-02 > div > input:checked ~ label{
+        background-color:#ed97a6;
+        color: white;
+        border-color: #ed97a6;
+    }
+
+    .answer-wrap > .input-wrap-02 > div > input:checked ~ img{
+        visibility : hidden;
     }
 }
