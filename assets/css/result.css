@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'NanumBarunpen';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumBarunpen.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -30,6 +37,10 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+#loading > .loading-img{
+    width: 330px;
 }
 
 .header{
@@ -64,7 +75,8 @@ body{
     border-radius: 30px;
     padding: 20px;
     overflow: hidden;
-    background-color: #e6e3ff;
+    background-color: rgba(230,227,255,0.5);
+    z-index: 50;
 }
 
 .main > .box > .result{
@@ -75,6 +87,7 @@ body{
 
 .main > .box > .result > h1{
     font-size: 3rem;
+    font-weight: 100;
 }
 
 .main > .box > img{
@@ -82,6 +95,7 @@ body{
     margin-top: 25px;
     left: 50%;
     transform: translateX(-50%);
+    height: 216px;
 }
 
 .main > .hashtag{
@@ -89,12 +103,47 @@ body{
     margin-top: 20px;
     text-align: center;
     white-space: nowrap;
+    font-family: 'NanumBarunpen';
     font-size: 1.6rem;
+    font-weight: bold;
+    z-index: 50;
+}
+
+.img-wrap{
+    position: relative;
+    text-align: right;
+    margin: 30px 17.5px 10px 0;
+}
+
+.img-wrap > .camera{
+    width: 50px;
+    margin-top: 5px;
+}
+
+.img-wrap > .tri{
+    position: absolute;
+    width: 266px;
+    right: 37.5px;
+    top: -240px;
+    transform: rotate(5.5deg);
+}
+
+.description{
+    width: 300px;
+    margin: 0px auto 50px auto;
+}
+
+.description > ul{
+    font-family: 'NanumBarunpen';
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+.description > ul > li{
+    margin-bottom: 18px;
 }
 
 .movie{
     position: absolute;
-    margin-top: 50px;
     left: 50%;
     transform: translateX(-50%);
     white-space: nowrap;
@@ -107,15 +156,28 @@ body{
     border: 3px solid #ed97a6;
 }
 
-.movie > .goodMovie > p{
+.movie > .goodMovie > img{
+    width: 250px;
+    position: absolute;
+    right: -20px;
+    transform: rotate(1.2deg);
+    top: -10px;
+    z-index: 0;
+}
+
+.movie > .goodMovie > img + span{
+    position: absolute;
     font-size: 2.3rem;
     text-align: right;
-    padding: 10px 20px 0 0;
+    right: 0px;
+    top: 5px;
+    z-index: 1;
 }
 
 .movie > .goodMovie > ul{
     list-style: none;
-    padding: 0 0 20px 30px;
+    padding: 0 0 15px 25px;
+    margin-top: 25px;
 }
 
 .movie > .goodMovie > ul > li{
@@ -131,15 +193,28 @@ body{
     border: 3px solid #7381b0;
 }
 
-.movie > .badMovie > p{
+.movie > .badMovie > img{
+    width: 250px;
+    position: absolute;
+    left: -20px;
+    transform: rotate(-1.2deg);
+    top: -10px;
+    z-index: 0;
+}
+
+.movie > .badMovie > img + span{
+    position: absolute;
     font-size: 2.3rem;
     text-align: left;
-    padding: 10px 0 0 20px;
+    left: 0px;
+    top: 5px;
+    z-index: 1;
 }
 
 .movie > .badMovie > ul{
     list-style: none;
-    padding: 0 30px 20px 0;
+    padding: 0 25px 15px 0;
+    margin-top: 25px;
 }
 
 .movie > .badMovie > ul > li{
