@@ -21,7 +21,8 @@
 html{
     font-size: 62.5%;
     font-family: 'BMJUA';
-    overflow-x: hidden
+    overflow-x: hidden;
+    background: #f5efeb;
 }
 
 #result{
