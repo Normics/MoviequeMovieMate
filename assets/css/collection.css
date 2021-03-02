@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    background: #f5efeb;
+}
+
+.title{
+    font-family: 'BMJUA';
+    font-size: 1.4rem;
+    margin: 80px 0 20px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.title > p{
+    color:rgba(234, 122, 122, 0.6);
+    font-size: 2rem;
+}
+
+.collection{
+    max-width: 349px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 113px);
+    grid-gap: 5px;
+}
+
+img{
+    height: 70px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.gandalf{
+    background: white;
+    padding: 7px;
+    text-align: center;
+    border-radius: 15px;
+    height: 130px;
+    font-family: 'BMJUA';
+    font-size: 1.6rem;
+}
+
+.matilda{
+    background: white;
+    padding: 7px;
+    text-align: center;
+    border-radius: 15px;
+    height: 130px;
+    font-family: 'BMJUA';
+    font-size: 1.6rem;
+}
+
+.barry{
+    background: white;
+    padding: 7px;
+    text-align: center;
+    border-radius: 15px;
+    height: 130px;
+    font-family: 'BMJUA';
+    font-size: 1.6rem;
+}
+.belma{
+    background: white;
+    padding: 7px;
+    text-align: center;
+    border-radius: 15px;
+    height: 130px;
+    font-family: 'BMJUA';
+    font-size: 1.6rem;
+}
+.shioriko{
+    background: white;
+    padding: 7px;
+    text-align: center;
+    border-radius: 15px;
+    height: 130px;
+    font-family: 'BMJUA';
+    font-size: 1.6rem;
+}
+.annabelle{
+    background: white;
+    padding: 7px;
+    text-align: center;
+    border-radius: 15px;
+    height: 130px;
+    font-family: 'BMJUA';
+    font-size: 1.6rem;
+}
+.madam{
+    background: white;
+    padding: 7px;
+    text-align: center;
+    border-radius: 15px;
+    height: 130px;
+    font-family: 'BMJUA';
+    font-size: 1.6rem;
+}
+.frank{
+    background: white;
+    padding: 7px;
+    text-align: center;
+    border-radius: 15px;
+    height: 130px;
+    font-family: 'BMJUA';
+    font-size: 1.6rem;
+}
+
+.blank{
+    position: relative;
+}
+
+.blank  >  img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn{
+    position: relative;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.btn > a {
+    text-decoration: none;
+    
+}
+
+.btn > a > input {
+    display: none;
+}
+
+.btn > a > input + label {
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-family: 'BMJUA';
+    color: white;
+    background-color: #ea7a7a;
+    padding: 10px 50px;
+    border-radius: 100px;
+}

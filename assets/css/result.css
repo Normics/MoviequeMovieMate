@@ -236,14 +236,14 @@ html{
 
 .btn > a {
     text-decoration: none;
-    
+    line-height: 55px;
 }
 
 .btn > a > input {
     display: none;
 }
 
-.btn > a > input + label {
+.btn > a > input[id ="again_btn"] + label {
     white-space: nowrap;
     cursor: pointer;
     font-size: 2.6rem;
@@ -251,6 +251,19 @@ html{
     font-family: 'BMJUA';
     color: white;
     background-color: #ea7a7a;
+    padding: 10px 50px;
+    border-radius: 100px;
+}
+
+.btn > a > input[id ="collection_btn"] + label {
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 2.6rem;
+    font-weight: 500;
+    font-family: 'BMJUA';
+    color: black;
+    background-color: none;
+    border: 3px solid #ea7a7a;
     padding: 10px 50px;
     border-radius: 100px;
 }
