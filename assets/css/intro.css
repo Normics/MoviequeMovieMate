@@ -109,7 +109,7 @@ html{
 
 #sns{
     position: relative;
-    margin-top: 50px;
+    margin: 50px 0;
     text-align: center;
     white-space: nowrap;
 }
